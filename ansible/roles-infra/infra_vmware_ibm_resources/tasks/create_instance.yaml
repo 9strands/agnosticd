@@ -42,6 +42,7 @@
   community.vmware.vmware_guest_network:
     name: "{{ _instance_name }}"
     network_name: "segment-{{ env_type }}-{{ guid }}"
+    folder: "/Workloads/{{env_type}}-{{ guid }}"
     start_connected: true
     connected: true
     state: present
